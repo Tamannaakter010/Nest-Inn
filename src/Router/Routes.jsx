@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home";
-import Login from "../Pages/Login";
+
 import Signup from "../Pages/Signin";
 import Hotels from "../Pages/Hotels";
 import Experience from "../Pages/Experience";
@@ -12,6 +12,7 @@ import Layout from "../Pages/HotelOwner/Layout";
 import Dashboard from "../Pages/HotelOwner/Dashboard";
 import AddRoom from "../Pages/HotelOwner/AddRoom";
 import ListRoom from "../Pages/HotelOwner/ListRoom"; 
+import AllOffers from "../Components/ExclusiveOffers/AllOffers";
 
 export const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
       {
         path: "mybookings",
         element: <MyBookings />,
+      },
+      {
+        path: "offers",
+        element: <AllOffers />,
       },
       {
         path: "experience",
@@ -60,10 +65,7 @@ export const router = createBrowserRouter([
           },
         ],
       },
-      {
-        path: "login",
-        element: <Login />,
-      },
+     
       {
         path: "signup",
         element: <Signup />,

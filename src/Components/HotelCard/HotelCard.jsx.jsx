@@ -7,7 +7,7 @@ const HotelCard = ({ room, index }) => {
   return (
     <div className="overflow-hidden rounded-xl shadow-lg bg-white transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
       <Link
-        to={`/rooms/${room._id}`}
+        to={`/room/${room._id}`} // CHANGE: Updated from '/rooms/:id' to '/room/:id' to match router configuration
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         key={room._id}
         className="block"
@@ -19,7 +19,7 @@ const HotelCard = ({ room, index }) => {
             className="w-full h-40 sm:h-48 md:h-56 lg:h-72 object-cover transition-transform duration-300 hover:scale-105"
           />
           {index % 2 === 0 && (
-            <p className="absolute top-3 left-3 bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
+            <p className="absolute top-3 left-3 bg-orange-100 text-orange-600 text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
               Best Seller
             </p>
           )}
