@@ -28,7 +28,7 @@ import roomImg2 from "./roomImg2.png";
 import roomImg3 from "./roomImg3.png";
 import roomImg4 from "./roomImg4.png";
 import regImage from "./regImage.png";
-import exclusiveOfferCardImg1 from "./exclusiveOfferCardImg1.png";
+//import exclusiveOfferCardImg1 from "./exclusiveOfferCardImg1.png";
 import exclusiveOfferCardImg2 from "./exclusiveOfferCardImg2.png";
 import exclusiveOfferCardImg3 from "./exclusiveOfferCardImg3.png";
 import addIcon from "./addIcon.svg";
@@ -76,6 +76,14 @@ export const assets = {
   heroImagee,
 };
 
+export const heroImage = [
+  {
+    
+    image: "https://i.ibb.co/tpP25Mxm/hero-Imagee-C-C6v-Ye5.png",
+  
+    
+  },]
+
 export const cities = ["Dubai", "Singapore", "New York", "London"];
 
 // Exclusive Offers Dummy Data
@@ -86,7 +94,7 @@ export const exclusiveOffers = [
     description: "Enjoy a complimentary night and daily breakfast",
     priceOff: 25,
     expiryDate: "Aug 31",
-    image: exclusiveOfferCardImg1,
+    image: "https://i.ibb.co/xcNGWy5/exclusive-Offer-Card-Img1-Cbb4hi6-M.png",
   },
   {
     _id: 2,
